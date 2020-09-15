@@ -68,9 +68,9 @@ class Test extends Component {
     }
 
     search =(e) => {
-        const pays = axios.get("http://localhost:8000/api/pays/")
-       const document = axios.get("http://localhost:8000/api/document/")
-       const nature = axios.get("http://localhost:8000/api/nature/")
+        const pays = axios.get("https://calasanzapp.herokuapp.com/api/pays/")
+       const document = axios.get("https://calasanzapp.herokuapp.com/api/document/")
+       const nature = axios.get("https://calasanzapp.herokuapp.com/api/nature/")
 
        axios.all([pays, document, nature])
        .then(axios.spread((...res)=>
